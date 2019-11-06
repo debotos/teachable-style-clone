@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function SignUp() {
 	return (
@@ -73,10 +74,10 @@ export default function SignUp() {
 											</label>
 											<div className='control-input'>
 												<input
-													autoFocus='autofocus'
+													autoFocus={true}
 													className='form-control input-hg'
 													type='text'
-													name='teachable_account[name]'
+													name='teachable_account'
 													id='modal_name_field'
 												/>
 											</div>
@@ -103,7 +104,6 @@ export default function SignUp() {
 													<input
 														autoComplete='off'
 														className='form-control input-hg'
-														autoFocus='autofocus'
 														placeholder=''
 														type='password'
 														name='teachable_account[password]'
@@ -195,9 +195,9 @@ export default function SignUp() {
 						<div></div>
 						<div className='box-footer full-width-box'>
 							<h2>Already have an account?</h2>
-							<a className='login-goto' href='/login'>
+							<Link to='/login' className='log-in'>
 								Log in
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

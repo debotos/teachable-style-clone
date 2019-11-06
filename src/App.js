@@ -1,21 +1,11 @@
 import React from 'react'
 
-import Navigation from './components/Navigation'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
-import Dummy from './components/Dummy'
-import Login from './components/Login'
-import SignUp from './components/SignUp'
+import AppRoutes from './AppRoutes'
 
 function App() {
 	return (
-		<div className='body-public'>
-			<Navigation />
-			<Hero />
-			<Dummy />
-			<Footer />
-			<Login />
-			<SignUp />
+		<div id='app'>
+			<AppRoutes />
 		</div>
 	)
 }

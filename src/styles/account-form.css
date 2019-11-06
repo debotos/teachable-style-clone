@@ -1,0 +1,360 @@
+.account-form {
+	font-size: 13px;
+	overflow-x: hidden;
+}
+@media (max-width: 991px) {
+	.account-form {
+		width: 100%;
+		height: auto;
+		margin: auto;
+		background-color: white;
+	}
+}
+@media (min-width: 992px) {
+	.account-form {
+		background-color: #f5f6f7;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+	}
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+@media (min-width: 992px) {
+	.account-form .form-aligner {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+.account-form .form-aligner .inner-box {
+	position: relative;
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .inner-box {
+		display: block;
+		width: 100%;
+		box-shadow: none;
+	}
+}
+@media (min-width: 992px) {
+	.account-form .form-aligner .inner-box {
+		padding-left: 383px;
+		width: 930px;
+		box-shadow: 0 8px 20px #e3e7ea;
+	}
+}
+.account-form .form-aligner .top-box,
+.account-form .form-aligner .left-box {
+	background-color: #1ea69a;
+	text-align: center;
+	padding: 40px 30px;
+	color: white;
+}
+.account-form .form-aligner .top-box h1,
+.account-form .form-aligner .left-box h1 {
+	font-family: 'TeachableSans-Bold';
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 1px;
+}
+.account-form .form-aligner .top-box .signup-step-anchor,
+.account-form .form-aligner .left-box .signup-step-anchor {
+	font-size: 14px;
+	text-align: right;
+	list-style: none;
+	margin-top: 22px;
+	margin-bottom: 0px;
+	letter-spacing: 0.53px;
+	line-height: 39px;
+	color: rgba(255, 255, 255, 0.72);
+	position: absolute;
+	right: 25px;
+	top: 130px;
+	padding-left: 40px;
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .top-box .signup-step-anchor,
+	.account-form .form-aligner .left-box .signup-step-anchor {
+		position: static;
+		padding-left: 0;
+		text-align: center;
+	}
+}
+.account-form .form-aligner .top-box .signup-step-anchor .selected,
+.account-form .form-aligner .left-box .signup-step-anchor .selected {
+	font-family: 'TeachableSans-Bold';
+	color: #fff;
+}
+.account-form .form-aligner .top-box .signup-step-anchor .selected:before,
+.account-form .form-aligner .left-box .signup-step-anchor .selected:before {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #fff;
+	content: '';
+	position: absolute;
+	right: -25px;
+	margin-top: 8px;
+	display: inline-block;
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .top-box .signup-step-anchor .selected:before,
+	.account-form .form-aligner .left-box .signup-step-anchor .selected:before {
+		display: none;
+	}
+}
+.account-form .form-aligner .top-box .signup-step-anchor .step-number,
+.account-form .form-aligner .left-box .signup-step-anchor .step-number {
+	font-family: 'TeachableSans-Regular';
+	margin-right: 8px;
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .top-box {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		align-items: center;
+	}
+	.account-form .form-aligner .top-box .top-box-text {
+		margin: auto;
+	}
+}
+@media (min-width: 992px) {
+	.account-form .form-aligner .top-box {
+		display: none;
+	}
+}
+.account-form .form-aligner .left-box {
+	position: absolute;
+	left: 0px;
+	z-index: 1000;
+	height: 100%;
+	width: 383px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .left-box {
+		display: none;
+	}
+}
+.account-form .form-aligner .left-box img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.account-form .form-aligner .right-box {
+	min-height: 386px;
+	background-color: white;
+	padding: 40px 45px;
+}
+@media (max-width: 414px) {
+	.account-form .form-aligner .right-box {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .right-box {
+		width: 100%;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
+@media (min-width: 992px) {
+	.account-form .form-aligner .right-box {
+		width: 552px;
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+	}
+}
+.account-form .form-aligner .right-box .error,
+.account-form .form-aligner .right-box .success {
+	font-family: 'TeachableSans-Bold';
+	display: none;
+	border-radius: 2px;
+	letter-spacing: 0.1px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.account-form .form-aligner .right-box .error {
+	color: #c74a47;
+	background-color: #fbe2e2;
+}
+.account-form .form-aligner .right-box .success {
+	color: #ffffff;
+	background-color: #7ecdc6;
+}
+.account-form .form-aligner .right-box .fields .group {
+	margin-bottom: 20px;
+}
+.account-form .form-aligner .right-box .fields .group label {
+	font-family: 'TeachableSans-Medium';
+	color: #47505e;
+	line-height: 29px;
+	margin-bottom: 5px;
+}
+.account-form .form-aligner .right-box .fields .group input {
+	background-color: #f4f9fb;
+	border: 0;
+	box-shadow: 0px 1px 1px 0px #e6e9ec;
+	color: #555;
+	margin-bottom: 14px;
+	height: 40px;
+	padding: 5px 10px;
+}
+.account-form .form-aligner .right-box .fields .group input:focus {
+	background: #fff8e6;
+	color: #333;
+	box-shadow: 0px 1px 1px 0px #f9c4ad;
+}
+.account-form .form-aligner .right-box .fields select {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.account-form .form-aligner .right-box .account-form-button-container {
+	text-align: center;
+	position: relative;
+}
+.account-form .form-aligner .right-box .account-form-button-container .btn {
+	letter-spacing: normal;
+	line-height: 20px;
+	border-radius: 50px;
+	user-select: none;
+	margin-top: 20px;
+	padding: 16px 32px;
+}
+.account-form .form-aligner .right-box .duplicate-account a {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.account-form .form-aligner .right-box .forgot-password {
+	text-align: center;
+	margin-top: 70px;
+}
+.account-form .form-aligner .right-box .forgot-password a {
+	font-family: 'TeachableSans-Medium';
+	text-decoration: underline;
+	font-size: 12px;
+	color: #828282;
+}
+.account-form .form-aligner .right-box .right-box-spinner {
+	position: absolute;
+	z-index: 1002;
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	opacity: 0.75;
+	left: calc(50% - (50px / 2));
+	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nODBweCcgaGVpZ2h0PSc4MHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgY2xhc3M9InVpbC1kZWZhdWx0Ij48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgY2xhc3M9ImJrIj48L3JlY3Q%2BPHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMHMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8%2BPC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjA4MzMzMzMzMzMzMzMzMzMzcycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q%2BPHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc%2BICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuMTY2NjY2NjY2NjY2NjY2NjZzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDkwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC4yNXMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8%2BPC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTIwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC4zMzMzMzMzMzMzMzMzMzMzcycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q%2BPHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjQxNjY2NjY2NjY2NjY2NjdzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE4MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc%2BICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuNXMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8%2BPC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjEwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC41ODMzMzMzMzMzMzMzMzM0cycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q%2BPHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjY2NjY2NjY2NjY2NjY2NjZzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI3MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc%2BICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuNzVzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDMwMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc%2BICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuODMzMzMzMzMzMzMzMzMzNHMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8%2BPC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC45MTY2NjY2NjY2NjY2NjY2cycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q%2BPC9zdmc%2B)
+		center center no-repeat;
+	background-size: 50px;
+}
+.account-form .form-aligner .right-box .create-form-spinner {
+	top: calc(107% - (50px / 2));
+}
+.account-form .form-aligner .right-box .log-in-form-spinner {
+	top: calc(154% - (50px / 2));
+}
+.account-form .form-aligner .right-box .box-footer {
+	border-top: 1px solid #eee;
+	height: 80px;
+	margin-top: 40px;
+	margin-bottom: -40px;
+	margin-left: -45px;
+	margin-right: -45px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.account-form .form-aligner .right-box .box-footer h2 {
+	font-family: 'TeachableSans-Medium';
+	font-size: 13px;
+	color: #828282;
+}
+.account-form .form-aligner .right-box .box-footer a {
+	font-family: 'TeachableSans-SemiBold';
+	color: #09a59a;
+	text-align: center;
+}
+.account-form .form-aligner .right-box .split-in-half-box {
+	line-height: 70px;
+}
+.account-form .form-aligner .right-box .split-in-half-box a {
+	width: 50%;
+	float: left;
+	letter-spacing: 0.61px;
+}
+.account-form .form-aligner .right-box .split-in-half-box a:hover {
+	cursor: pointer;
+}
+.account-form .form-aligner .right-box .split-in-half-box .left-half {
+	padding: 6px 0px;
+	border-right: 1px solid #eee;
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .right-box .split-in-half-box {
+		border-bottom: 1px solid #eee;
+	}
+}
+.account-form .form-aligner .right-box .full-width-box {
+	padding: 0px 35px;
+}
+.account-form .form-aligner .right-box .full-width-box a {
+	letter-spacing: 0.6px;
+	padding-left: 4px;
+}
+@media (max-width: 359px) {
+	.account-form .form-aligner .right-box .full-width-box {
+		flex-direction: column;
+	}
+	.account-form .form-aligner .right-box .full-width-box a {
+		margin-top: 15px;
+	}
+}
+@media (max-width: 991px) {
+	.account-form .form-aligner .right-box .full-width-box {
+		border-top: none;
+	}
+}
+
+.agree-to-terms .checkbox-label {
+	font-family: 'TeachableSans-Medium';
+	font-size: 12px;
+	color: #828282;
+	width: 100%;
+	line-height: 24px !important;
+}
+.agree-to-terms .checkbox-label a {
+	color: #09a59a;
+}
+.agree-to-terms .checkbox-label a:hover,
+.agree-to-terms .checkbox-label a:focus {
+	color: #0e504a;
+	outline: none;
+}
+.agree-to-terms .checkbox-label input {
+	height: auto;
+	margin-right: 6px;
+	margin-top: 0px;
+	vertical-align: middle;
+}
+
+section.sign-up-form .marketing-email-opt-in-container .checkbox-label {
+	font-family: 'TeachableSans-Medium';
+	font-size: 12px;
+	color: #828282;
+	width: 100%;
+	line-height: 24px !important;
+}

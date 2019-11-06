@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import './style.scss'
 
 export default function Navigation() {
 	const [nav, toggleNav] = useState(false)
@@ -13,9 +16,9 @@ export default function Navigation() {
 					<a className='teachable-logo' href='/' title='Teachable - Create a Course'>
 						{' '}
 					</a>
-					<a className='log-in' href='/login'>
+					<Link to='/login' className='log-in'>
 						Log in
-					</a>
+					</Link>
 					<button type='button' className='navbar-toggle' onClick={() => toggleNav(!nav)}>
 						<span className='icon-bar'></span>
 						<span className='icon-bar'></span>

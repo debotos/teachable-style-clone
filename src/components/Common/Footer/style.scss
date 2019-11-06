@@ -1,0 +1,137 @@
+footer {
+	padding: 120px 0;
+	background: #f8f3f0;
+	font-family: 'TeachableSans-Regular';
+	font-size: 14px;
+	clear: both;
+}
+footer.simple {
+	padding: 30px 0;
+}
+@media (max-width: 991px) {
+	footer {
+		padding-top: 60px;
+		text-align: center;
+	}
+}
+footer .container .cta {
+	margin-bottom: 75px;
+}
+footer .container .cta .cta-text {
+	color: #2c2f33;
+	text-align: left;
+	font-size: 28px;
+	line-height: 44px;
+}
+footer .container .row ul {
+	list-style-type: none;
+}
+@media (max-width: 991px) {
+	footer .container .row ul {
+		margin-bottom: 30px;
+		padding-left: 0px;
+	}
+}
+footer .container .row ul h4 {
+	font-family: 'TeachableSans-Bold';
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #2c2f33;
+}
+@media (max-width: 991px) {
+	footer .container .row ul h4 {
+		margin-bottom: 10px;
+	}
+}
+footer .container .row ul li {
+	margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+	footer .container .row ul li.in-touch {
+		padding-top: 5px;
+	}
+}
+footer .container .row ul li.social-icons {
+	margin-top: 15px;
+}
+footer .container .row ul li.social-icons .social-icon {
+	margin-right: 7px;
+}
+footer .container .row ul li.social-icons a:hover {
+	text-decoration: none;
+}
+footer .container .row ul li a {
+	line-height: 1.5em;
+	color: #2c2f33;
+}
+footer .container .row ul li a:hover {
+	text-decoration: underline;
+}
+footer .container .row .new-homepage-footer-logo {
+	font-size: 9px;
+	display: inline-block;
+	vertical-align: bottom;
+	color: #5f5f5f;
+}
+footer .container .row .new-homepage-footer-logo.padding {
+	padding-top: 30px;
+}
+footer .container .row .new-homepage-footer-logo a:hover {
+	text-decoration: none;
+}
+footer .container .row .new-homepage-footer-logo a img {
+	width: 94px;
+	height: auto;
+	margin-right: 10px;
+}
+footer .container .row .simple-right a {
+	float: right;
+}
+footer .container .row .simple-right a:not(:first-of-type) {
+	margin-right: 40px;
+}
+footer .container .row .simple-mobile-links a {
+	display: block;
+	margin-bottom: 10px;
+}
+footer .container .row .simple-mobile-links a:last-of-type {
+	margin-bottom: 30px;
+}
+footer .container .disclaimer {
+	padding-top: 20px;
+	font-size: 9px;
+	display: inline-block;
+	vertical-align: bottom;
+	color: #5f5f5f;
+}
+footer .container .disclaimer .markdown-area {
+	line-height: 0;
+}
+footer .container .disclaimer p {
+	font-size: 9px;
+	display: inline-block;
+	vertical-align: bottom;
+	color: #5f5f5f;
+}
+footer .container .disclaimer p:not(:last-of-type) {
+	margin-bottom: 10px;
+}
+footer .discover-link-footer {
+	display: flex;
+	align-items: center;
+}
+@media all and (max-width: 768px) {
+	footer .discover-link-footer {
+		justify-content: center;
+	}
+}
+footer .discover-beta-badge {
+	background-color: transparent;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 2px 4px;
+	border-radius: 2px;
+	margin-left: 4px;
+	color: #2c2f33;
+	border: 1px solid #2c2f33;
+}

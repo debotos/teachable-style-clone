@@ -1,10 +1,11 @@
 import React from 'react'
 
-import teachableLogoOrange from '../assets/teachable-logo-orange.svg'
-import instagramIcon from '../assets/instagram_icon.svg'
-import pinterestIcon from '../assets/pinterest_icon.png'
-import twitterIcon from '../assets/twitter_icon.png'
-import facebookIcon from '../assets/facebook_icon.png'
+import teachableLogoOrange from '../../../assets/teachable-logo-orange.svg'
+import instagramIcon from '../../../assets/instagram_icon.svg'
+import pinterestIcon from '../../../assets/pinterest_icon.png'
+import twitterIcon from '../../../assets/twitter_icon.png'
+import facebookIcon from '../../../assets/facebook_icon.png'
+import './style.scss'
 
 export default function Footer() {
 	return (

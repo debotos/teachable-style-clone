@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './style.scss'
+
 export default function Hero() {
 	return (
 		<section className='hero-partial _2'>

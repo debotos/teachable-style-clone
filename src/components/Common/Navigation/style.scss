@@ -1,0 +1,237 @@
+.nav-menu {
+	box-sizing: content-box;
+	color: white;
+	font-family: 'TeachableSans-Regular';
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.7px;
+	height: 92px;
+	padding-top: 25px;
+	z-index: 10;
+	background: #1ea69a;
+	background: -moz-linear-gradient(left, #1ea69a 24%, #e9723d 100%);
+	background: -webkit-linear-gradient(left, #1ea69a 24%, #e9723d 100%);
+	background: linear-gradient(to right, #1ea69a 24%, #e9723d 100%);
+}
+.nav-menu .container {
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.nav-menu .teachable-logo {
+	margin-top: 17px;
+	float: left;
+	width: 142px;
+	height: 27px;
+	background-image: url('../../../assets/teachable-logo-white.svg');
+	background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+	.nav-menu .teachable-logo {
+		text-align: center;
+		display: inline-block;
+	}
+}
+.nav-menu .navbar-collapse.collapse {
+	padding: 0;
+}
+.nav-menu .navbar-collapse.collapse .discover-cta {
+	border-bottom: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	clear: both;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-menu .navbar-collapse.collapse .discover-cta > .discover-cta-link {
+	font-size: 12px;
+	margin-top: 8px;
+	display: inline-flex;
+	align-items: center;
+}
+.nav-menu .navbar-collapse.collapse .discover-cta > .discover-cta-link:hover {
+	text-decoration: underline;
+}
+.nav-menu .navbar-collapse.collapse .discover-cta > .discover-cta-link > svg {
+	margin-left: 6px;
+	fill: white;
+}
+@media all and (max-width: 991px) {
+	.nav-menu .navbar-collapse.collapse .discover-cta > .discover-cta-link > svg {
+		fill: black;
+	}
+}
+@media all and (max-width: 991px) {
+	.nav-menu .navbar-collapse.collapse .discover-cta > .discover-cta-link {
+		color: black;
+		font-size: 10px;
+		padding: 12px;
+		width: 100%;
+		margin: 0;
+		border-top: 1px solid #e0e4e8;
+	}
+}
+@media all and (max-width: 991px) {
+	.nav-menu .navbar-collapse.collapse .discover-cta {
+		background-color: #fafafa;
+		border-top: none;
+		justify-content: center;
+	}
+}
+.nav-menu .navbar-collapse.in,
+.nav-menu .navbar-collapse.collapsing {
+	max-height: none;
+	padding: 0;
+	margin-top: 91px;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+@media (min-width: 992px) {
+	.nav-menu ul {
+		float: left;
+		margin-left: 30px;
+	}
+	.nav-menu ul li {
+		float: left;
+	}
+}
+@media (max-width: 991px) {
+	.nav-menu ul {
+		background-color: #fafafa;
+		-webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+	}
+}
+.nav-menu li.dropdown-only {
+	display: none;
+}
+@media (max-width: 991px) {
+	.nav-menu li.dropdown-only {
+		display: block;
+	}
+}
+.nav-menu li > a,
+.nav-menu .log-in {
+	display: block;
+}
+@media (min-width: 992px) {
+	.nav-menu li > a,
+	.nav-menu .log-in {
+		margin: 23px 15px 0 15px;
+		padding: 0 0 15px 0;
+		border-bottom: 2px solid transparent;
+	}
+}
+@media (max-width: 991px) {
+	.nav-menu li > a,
+	.nav-menu .log-in {
+		margin: 0;
+		padding: 23px 0 23px 45px;
+		color: #2c2f33;
+	}
+}
+@media (min-width: 992px) {
+	.nav-menu li > a:hover,
+	.nav-menu li > a:active,
+	.nav-menu .log-in:hover,
+	.nav-menu .log-in:active {
+		border-bottom: 2px solid #fff;
+	}
+}
+@media (max-width: 991px) {
+	.nav-menu li > a:hover,
+	.nav-menu li > a:active,
+	.nav-menu .log-in:hover,
+	.nav-menu .log-in:active {
+		color: #ff7f45;
+	}
+}
+.nav-menu li > a:focus,
+.nav-menu .log-in:focus {
+	color: white;
+}
+.nav-menu .create-course,
+.nav-menu .log-in {
+	float: right;
+}
+@media (max-width: 767px) {
+	.nav-menu .create-course,
+	.nav-menu .log-in {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.nav-menu .create-course,
+	.nav-menu .log-in {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.nav-menu .create-course,
+	.nav-menu .log-in {
+		display: inline-block;
+	}
+}
+.nav-menu .create-course {
+	font-size: 13px;
+	margin-top: 13px;
+	margin-left: 16px;
+	padding: 12px 30px;
+	text-decoration: none !important;
+	border: none;
+	border-radius: 30px;
+	background: rgba(255, 255, 255, 0.2);
+	fill: none;
+	transition: all 0.5s ease;
+}
+.nav-menu .create-course:hover {
+	background: rgba(255, 255, 255, 0.4);
+	transition: all 0.5s ease;
+}
+.nav-menu .log-in {
+	font-size: 14px;
+	text-decoration: none !important;
+	border-bottom: 2px solid transparent;
+}
+.nav-menu .log-in:hover {
+	border-bottom: 2px solid #fff;
+}
+.nav-menu .navbar-toggle {
+	padding: 0;
+	margin: 0;
+	margin-top: 24px;
+	margin-right: 24px;
+	transition: all 0.5s ease;
+}
+.nav-menu .navbar-toggle .icon-bar {
+	background: white;
+}
+.nav-menu .navbar-toggle.navbar-rotated {
+	transform: rotate(90deg);
+	transition: all 0.5s ease;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.nav-menu .navbar-collapse {
+		display: none !important;
+	}
+	.nav-menu .navbar-toggle {
+		display: block;
+	}
+	.nav-menu .navbar-collapse.in {
+		display: block !important;
+	}
+}
+.nav-menu.fixed {
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+.nav-menu.transparent {
+	position: absolute;
+	width: 100%;
+	background: transparent;
+}

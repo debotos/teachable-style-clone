@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
 	return (
@@ -39,7 +40,7 @@ export default function Login() {
 										<label htmlFor='login-email-field'>Email address</label>
 										<input
 											id='login-email-field'
-											autoFocus='autofocus'
+											autoFocus={true}
 											className='form-control input-hg'
 											type='email'
 											name='teachable_account[email]'
@@ -49,7 +50,6 @@ export default function Login() {
 										<label htmlFor='login-password-field'>Password</label>
 										<input
 											id='login-password-field'
-											autoFocus='autofocus'
 											className='form-control input-hg'
 											type='password'
 											name='teachable_account[password]'
@@ -73,7 +73,9 @@ export default function Login() {
 						</div>
 						<div className='box-footer full-width-box'>
 							<h2>Don't have an account?</h2>
-							<a href='/create-account'>Sign up</a>
+							<Link to='/signup' className='log-in'>
+								Sign up
+							</Link>
 						</div>
 					</div>
 				</div>

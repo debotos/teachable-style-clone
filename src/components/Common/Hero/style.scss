@@ -1,0 +1,212 @@
+.hero-partial .hero-div {
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+.hero-partial .hero-container {
+	color: white;
+}
+@media (max-width: 767px) {
+	.hero-partial .hero-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (min-width: 768px) {
+	.hero-partial .hero-container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.hero-partial .hero-container .cta-disclaimer-text {
+	padding-top: 15px;
+}
+.hero-partial .hero-container .cta-disclaimer-text a {
+	text-decoration: underline;
+}
+@media (max-width: 767px) {
+	.hero-partial .hero-container .hero-text {
+		width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.hero-partial .hero-container .hero-text.hero-text-left {
+		width: 60%;
+	}
+}
+.hero-partial .hero-container .hero-text.hero-text-left h2 {
+	margin-top: 20px;
+}
+.hero-partial .hero-container .hero-text.hero-text-center {
+	margin: auto;
+	text-align: center;
+}
+.hero-partial .hero-container .hero-text.hero-text-center h1 {
+	margin: auto;
+}
+.hero-partial .hero-container .hero-text.hero-text-center h2 {
+	margin: auto;
+	margin-top: 15px;
+}
+.hero-partial .hero-container .hero-text.hero-text-center a.orange-button,
+.hero-partial .hero-container .hero-text.hero-text-center a.light-orange-button {
+	margin-top: 40px;
+}
+@media (max-width: 767px) {
+	.hero-partial .hero-container .hero-text.hero-text-center a.orange-button,
+	.hero-partial .hero-container .hero-text.hero-text-center a.light-orange-button {
+		margin-bottom: 80px;
+	}
+}
+.hero-partial .hero-container .hero-text h1,
+.hero-partial .hero-container .hero-text .superheader {
+	font-family: 'TeachableSans-Bold';
+}
+.hero-partial .hero-container .hero-text h1 {
+	font-size: 32px;
+	line-height: 44px;
+}
+.hero-partial .hero-container .hero-text .superheader {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.hero-partial .hero-container .hero-text a.orange-button,
+.hero-partial .hero-container .hero-text a.light-orange-button {
+	margin-top: 60px;
+	font-size: 18px;
+}
+@media (max-width: 767px) {
+	.hero-partial .hero-container .hero-text a.orange-button,
+	.hero-partial .hero-container .hero-text a.light-orange-button {
+		display: inline-block;
+		padding-right: 50px;
+		padding-left: 50px;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+}
+.hero-partial .hero-container .hero-text a.arrow-button {
+	margin-top: 20px;
+	text-align: center;
+}
+@media (max-width: 767px) {
+	.hero-partial .hero-container .hero-text a.arrow-button {
+		margin-bottom: 40px;
+	}
+}
+.hero-partial .hero-container .hero-text a.arrow-button.left {
+	margin: 25px 60px 0 0;
+}
+.hero-partial .hero-container .hero-text a.arrow-button span {
+	color: blue;
+	transform: rotate(-90deg);
+}
+.hero-partial .input-container {
+	position: relative;
+	margin-top: 60px;
+}
+@media (max-width: 991px) {
+	.hero-partial .input-container {
+		margin-bottom: 60px;
+	}
+}
+@media (min-width: 992px) {
+	.hero-partial .input-container {
+		margin-bottom: 10px;
+	}
+}
+.hero-partial .input-container input {
+	width: calc(100% - 159px);
+	height: 60px;
+	border-radius: 100px;
+	padding: 19px;
+	padding-left: 25px;
+	padding-right: 75px;
+	font-size: 14px;
+}
+.hero-partial .input-container input.error {
+	border-color: red;
+}
+.hero-partial .input-container input:invalid {
+	box-shadow: none;
+}
+.hero-partial .input-container .orange-button,
+.hero-partial .input-container .light-orange-button {
+	border: 0px;
+	font-size: 18px;
+	padding: 17.5px 20px;
+	height: 60px;
+}
+.hero-partial .input-container.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	max-width: 600px;
+}
+@media (max-width: 767px) {
+	.hero-partial .input-container.center input {
+		width: 100%;
+		padding-right: 25px;
+	}
+}
+@media (max-width: 767px) {
+	.hero-partial .input-container.center .orange-button,
+	.hero-partial .input-container.center .light-orange-button {
+		margin-top: 20px;
+		width: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-bottom: 45px;
+	}
+}
+@media (min-width: 768px) {
+	.hero-partial .input-container.center .orange-button,
+	.hero-partial .input-container.center .light-orange-button {
+		position: absolute !important;
+		width: 210px;
+		right: 0px;
+	}
+}
+@media (max-width: 991px) {
+	.hero-partial .input-container.left input {
+		width: 100%;
+		padding-right: 25px;
+	}
+}
+@media (max-width: 991px) {
+	.hero-partial .input-container.left .orange-button,
+	.hero-partial .input-container.left .light-orange-button {
+		margin-top: 20px;
+		width: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (min-width: 992px) {
+	.hero-partial .input-container.left .orange-button,
+	.hero-partial .input-container.left .light-orange-button {
+		position: absolute !important;
+		width: 210px;
+		right: 0px;
+	}
+}
+.hero-partial .marketing-email-opt-in-container {
+	margin-top: 2%;
+	margin-left: 2%;
+}
+.hero-partial .marketing-email-opt-in-container input[type='checkbox'] {
+	width: initial;
+	height: initial;
+}
+.hero-partial .marketing-email-opt-in-container label[for='opted-into-marketing-email'] {
+	margin-left: 1%;
+	margin-top: 2px;
+}
+.hero-partial .input-container .orange-button,
+.hero-partial .input-container .light-orange-button {
+	border: 0px !important;
+	font-size: 18px !important;
+	padding: 17.5px 20px !important;
+	height: 60px !important;
+}

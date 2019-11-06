@@ -1,0 +1,34 @@
+#app .orange-button {
+	font-family: 'TeachableSans-Bold';
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 100px;
+	padding: 20px 70px;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: default;
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: #ff7f45;
+	color: white;
+}
+#app .orange-button:not(.fake-button):not(.disabled):not([disabled]) {
+	cursor: pointer;
+}
+#app .orange-button.small-button {
+	padding: 15px 30px;
+}
+#app .orange-button.extra-small-button {
+	padding: 10px 20px;
+}
+#app .orange-button.no-horizontal-padding {
+	padding-right: 0;
+	padding-left: 0;
+}
+#app .orange-button span {
+	position: relative;
+}
+#app .orange-button:not(.fake-button):not(.disabled):not([disabled]):hover,
+#app .orange-button:not(.disabled):not([disabled]):focus {
+	background-color: #ff6d2c;
+}
